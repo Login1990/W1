@@ -41,3 +41,8 @@ body {
     margin: 0 auto;
   }
 }
+footer {
+  margin: 0 auto;
+  padding: 1vw;
+  text-align: center;
+}

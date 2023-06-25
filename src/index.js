@@ -41,14 +41,14 @@ async function initializeCode() {
     "Boxer_(dog)",
     /*For who knows what reason the images of Eskimo are not similar to any type of Eskimo dog, and look more like a Syberian Huskey therefore*/
 
-    "Siberian_Husky"
+    "Siberian_Husky",
   ];
   let lorem =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
   let body = document.body;
+  let container = document.createElement("div");
+  container.classList = "container";
   for (let i = 0; i < 5; i++) {
-    let container = document.createElement("div");
-    container.classList = "container";
     let wiki_item = document.createElement("div");
     let wiki_header = document.createElement("h1");
     wiki_header.innerText = listOfBreedsToDisplay[i];
@@ -78,6 +78,8 @@ async function initializeCode() {
     wiki_img.src = dogURL;
     wiki_text.innerText = descURL;
   }
-
+  let footer = document.createElement("footer");
+  footer.innerText = "All your base belong to us";
+  container.appendChild(footer);
   //document.getElementById("app").innerHTML = "<h1>Hello!</h1>";
 }
