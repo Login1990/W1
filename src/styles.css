@@ -11,18 +11,20 @@ body {
 }
 
 .wiki-item {
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 10px;
+  padding-right: 10px;
   box-shadow: 0px 0px 10px grey;
 }
 
 .wiki-content {
   padding: 5px;
+  text-align: right;
 }
 
 @media screen and (min-width: 600px) {
   .wiki-content {
     display: flex;
+    flex-flow: row-reverse;
   }
   .wiki-img-container {
     min-width: 50%;
